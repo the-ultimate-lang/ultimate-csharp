@@ -9,7 +9,7 @@
     -->
     <LangVersion>latest</LangVersion>
     <!-- version numbers will be updated by build -->
-    <Version>0.0.20230315.022002-beta</Version>
+    <Version>0.0.20230315.022554-beta</Version>
     <!--
     <AssemblyVersion>13.0.1.0</AssemblyVersion>
     <FileVersion>13.0.1</FileVersion>
@@ -29,8 +29,8 @@
     <!--
     <Title>Json.NET</Title>
     -->
-    <Title>JavaCommons Core Library</Title>
-    <PackageId>JavaCommons</PackageId>
+    <Title>Ultimate Core Library</Title>
+    <PackageId>Ultimate</PackageId>
     <PackageTags>json</PackageTags>
     <PackageIcon>packageIcon.png</PackageIcon>
     <PackageIconFullPath>$(MSBuildThisFileDirectory)packageIcon.png</PackageIconFullPath>
