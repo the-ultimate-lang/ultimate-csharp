@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "linux": {
+      "commandName": "Project",
+      "commandLineArgs": "-a aaaaa --bbb -c 1,2,a,b -d Fuga foo bar foobar"
+    }
+  }
+}

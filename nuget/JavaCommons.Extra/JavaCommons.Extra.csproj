@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>2023.0201.2000.37</Version>
+    <!--
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    -->
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <!--
+  <ItemGroup>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SevenZipExtractor" Version="1.0.17" />
+    <PackageReference Include="Jurassic" Version="3.2.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JavaCommons\JavaCommons.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="*.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeLibs Remove="7z2201-x32.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="7z2201-x32.dll" />
+    <None Remove="7z2201-x64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeLibs Remove="7z2201-x64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="7z2201-x32.dll" />
+    <EmbeddedResource Include="7z2201-x64.dll" />
+  </ItemGroup>
+  -->
+</Project>
